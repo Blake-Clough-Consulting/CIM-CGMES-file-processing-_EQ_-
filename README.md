@@ -167,10 +167,10 @@ This gives you a single table containing both the object and all its referenced 
 
 ## Contributing
 
-Developed by
+Developed by:\
 Anas Mufid Nurrochman
 
-Checked by
+Checked by:\
 Gregor Mathieson (not yet)
 
 Contributions, suggestions, or improvements are welcome.
@@ -178,7 +178,7 @@ Please ensure that new functions follow the existing commenting style and mainta
 
 ## License
 
-This tool processes publicly defined CIM CGMES schemas.
+This tool processes publicly defined CIM CGMES schemas.\\
 No external proprietary APIs are used.
 
 ## References
