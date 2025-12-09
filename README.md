@@ -171,7 +171,7 @@ Developed by
 Anas Mufid Nurrochman
 
 Checked by
-Gregor Mathieson
+Gregor Mathieson (not yet)
 
 Contributions, suggestions, or improvements are welcome.
 Please ensure that new functions follow the existing commenting style and maintain clarity for future users.
