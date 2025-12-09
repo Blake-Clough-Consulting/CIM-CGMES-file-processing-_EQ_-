@@ -15,6 +15,31 @@
 ## Description
 This is a Python tool for automated parsing and processing of CIM CGMES EQ datasets. The tool extracts all CIM classes from an EQ XML file contained inside a ZIP archive, converts each class into a structured CSV, and automatically enriches each CSV by resolving all rdf:resource references directly from the XML data.
 
+## Background
+
+The purpose of the Common Grid Model Exchange Specification (CGMES) is to define the interface between 
+Transmission System Operators (TSO) software in order to exchange power system modelling information 
+as required by the European Network of Transmission System Operators for Electricity (ENTSO-E) and TSO 
+business processes.
+The CGMES is used as a baseline exchange standard for the implementation of the Common Grid Model 
+(CGM) methodologies in accordance with the requirements for the implementation of various European 
+network codes and guidelines. The CGMES applies to applications dealing with power system data 
+management, as well as applications supporting the following analyses: 
+- load flow and contingency analyses, 
+- short circuit calculations, 
+- market information and transparency, 
+- capacity calculation for capacity allocation and congestion management, and 
+- dynamic security assessment. 
+The conformity of the applications used for operational and system development exchanges with the CGMES 
+is crucial for the needed interoperability of these applications. ENTSO-E therefore developed and approved 
+the CGMES Conformity Assessment Framework as the guiding principles for assessing applications’ CGMES 
+conformity. Based on those principles. This publicly available specification relies on the CGMES Conformity 
+Assessment Process operated by ENTSO-E in order to ensure that the CGMES is properly implemented by 
+suppliers of the applications used by TSOs.
+
+The CGMES is defined using information on the Common Information Model (CIM) available in the public 
+domain.
+
 **Important Notes:**
 
 There are a few different CIM file types, each covering a different layer of the network model (CIM-CGMES - powsybl-core v7.1.0):
@@ -92,22 +117,17 @@ All outputs are written into this directory.
 This tool requires Python. Developed using Python version 3.12+.
 It is recommended to use a virtual environment.
 
-Install required packages:
-
-`pip install pandas`
-
-
 No external API calls are required.
 
 ## Usage
 
-Place your EQ ZIP file in the project directory.
+- Place your EQ ZIP file in the project directory.
 
-Update the zip_path and output_folder variables in the script.
+- Update the zip_path and output_folder variables in the script.
 
-Run the script:
+- Run the script:
 
-`python cim_parser.py`
+     `python cim_parser.py`
 
 The script will:
 
