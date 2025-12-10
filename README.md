@@ -139,20 +139,12 @@ All main functions are documented with Python docstrings.
 For each CIM class (for example BaseVoltage, ACLineSegment, BusbarSection), two outputs are created.
 
 1. Enriched CSV  
-   Filename:
-
-       <ClassName>_enriched.csv
-
    Contains:
    - Basic attributes directly from the CIM object  
    - All properties from child XML elements  
    - All resolved cross referenced attributes  
 
 2. Clean Excel  
-   Filename:
-
-       <ClassName>_clean.xlsx
-
    Contains:
    - Only user-friendly attributes  
    - All ID-style columns removed (rdf_ID, any `@...`, all `__resource` fields)  
