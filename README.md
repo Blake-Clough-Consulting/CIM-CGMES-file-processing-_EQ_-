@@ -51,7 +51,7 @@ There are a few different CIM file types, each covering a different layer of the
 - **DL** (Diagram Layout): Diagram positions.
 - **GL** (Geographical Layout):  Geographical positions.lol
 
-**This script is has only been tested for the EQ file only**
+**This script is designed for general CIM files, but has only been tested for the EQ file only**
 
 
 It reconstructs relationships between CIM objects using an internal ID index built from the original XML file. 
@@ -98,7 +98,7 @@ project/
 │
 ├── your_EQ_file.zip               (CGMES EQ ZIP archive)
 ├── cim_parser.py                  (your main parser script)
-└── OUTPUT/\
+└── OUTPUT/
      ├── ACLineSegment_enriched.csv
      ├── BaseVoltage_enriched.csv
      ├── Substation_enriched.csv
